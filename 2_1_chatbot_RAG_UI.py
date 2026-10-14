@@ -39,12 +39,12 @@ st.markdown(
     @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
 
     :root {
-        --ink: #1f2937;
-        --muted: #687386;
-        --line: #e4e8f0;
-        --canvas: #f7f8fc;
-        --purple: #6558d9;
-        --purple-dark: #5145bd;
+        --ink: #f4f6fb;
+        --muted: #c0c6d2;
+        --line: #3a3e48;
+        --canvas: #202124;
+        --purple: #8b82ff;
+        --purple-dark: #7569f0;
     }
 
     html, body, [class*="css"] {
@@ -57,7 +57,7 @@ st.markdown(
     }
 
     [data-testid="stHeader"] {
-        background: rgba(247,248,252,.96);
+        background: rgba(32,33,36,.97);
     }
 
     [data-testid="stSidebar"] {
@@ -103,18 +103,18 @@ st.markdown(
         line-height: 1.2;
         font-weight: 800;
         letter-spacing: -.6px;
-        color: #20263a;
+        color: #f5f6fa;
     }
 
     .brand-caption {
         margin-top: 3px;
-        color: #7b8495;
+        color: #c0c5d0;
         font-size: 11px;
     }
 
     .side-label {
         margin: 20px 0 9px 0;
-        color: #8a93a5;
+        color: #aeb5c2;
         font-size: 10px;
         font-weight: 700;
         letter-spacing: 1.15px;
@@ -122,7 +122,7 @@ st.markdown(
     }
 
     .side-note {
-        color: #7b8495;
+        color: #c0c5d0;
         font-size: 12px;
         line-height: 1.55;
         margin: 7px 0 12px;
@@ -140,14 +140,14 @@ st.markdown(
     }
 
     .document-status .status-title {
-        color: #3e4b66;
+        color: #f0f2f7;
         font-size: 12px;
         font-weight: 700;
         margin-bottom: 4px;
     }
 
     .document-status .status-detail {
-        color: #737e92;
+        color: #c0c6d2;
         font-size: 11px;
         line-height: 1.55;
     }
@@ -159,7 +159,7 @@ st.markdown(
         align-items: center;
         gap: 14px;
         padding: 4px 0 15px;
-        border-bottom: 1px solid #e6e9f1;
+        border-bottom: 1px solid #3a3e48;
         margin-bottom: 20px;
     }
 
@@ -168,11 +168,11 @@ st.markdown(
         font-size: 18px;
         font-weight: 800;
         letter-spacing: -.4px;
-        color: #222a3d;
+        color: #f4f6fb;
     }
 
     .topbar-subtitle {
-        color: #7b8495;
+        color: #c0c5d0;
         font-size: 12px;
         margin-top: 3px;
     }
@@ -187,6 +187,8 @@ st.markdown(
         font-size: 10px;
         font-weight: 700;
         letter-spacing: .6px;
+        position: relative;
+        top: 12px;
     }
 
     .welcome {
@@ -199,12 +201,12 @@ st.markdown(
         line-height: 1.2;
         letter-spacing: -1px;
         font-weight: 800;
-        color: #20263a !important;
+        color: #f5f6fa !important;
         margin: 0 0 9px 0;
     }
 
     .welcome p {
-        color: #687386 !important;
+        color: #c4c9d4 !important;
         font-size: 14px;
         line-height: 1.65;
         margin: 0;
@@ -268,7 +270,7 @@ st.markdown(
     [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] h1,
     [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] h2,
     [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] h3 {
-        color: #283147 !important;
+        color: #f1f3f8 !important;
         line-height: 1.72;
         font-size: 14px;
     }
@@ -286,18 +288,18 @@ st.markdown(
     }
 
     [data-testid="stChatInput"] > div:focus-within {
-        border-color: #9288eb !important;
+        border-color: #8b82ff !important;
         box-shadow: 0 0 0 3px rgba(101,88,217,.09) !important;
     }
 
     [data-testid="stChatInput"] textarea {
         background: #ffffff !important;
-        color: #20263a !important;
+        color: #f5f6fa !important;
         font-size: 14px !important;
     }
 
     [data-testid="stChatInput"] textarea::placeholder {
-        color: #8a93a5 !important;
+        color: #b4bac6 !important;
     }
 
     [data-testid="stAlert"] {
@@ -305,8 +307,152 @@ st.markdown(
     }
 
     [data-testid="stCaptionContainer"] {
-        color: #7b8495;
+        color: #c0c5d0;
     }
+
+
+    /* Final dark-theme overrides for Streamlit widgets */
+    [data-testid="stMarkdownContainer"],
+    [data-testid="stMarkdownContainer"] p,
+    [data-testid="stMarkdownContainer"] li,
+    [data-testid="stMarkdownContainer"] strong,
+    [data-testid="stMarkdownContainer"] h1,
+    [data-testid="stMarkdownContainer"] h2,
+    [data-testid="stMarkdownContainer"] h3,
+    label, .stCaption, small {
+        color: #f1f3f8;
+    }
+
+    [data-testid="stFileUploader"] section,
+    [data-testid="stFileUploader"] small,
+    [data-testid="stFileUploader"] span {
+        color: #f1f3f8 !important;
+    }
+
+    [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"],
+    [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] p,
+    [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] li,
+    [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] strong,
+    [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] h1,
+    [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] h2,
+    [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] h3 {
+        color: #f4f6fb !important;
+    }
+
+    [data-testid="stChatInput"] textarea {
+        color: #f4f6fb !important;
+        caret-color: #a69fff !important;
+    }
+
+    [data-testid="stChatInput"] textarea::placeholder {
+        color: #aeb5c2 !important;
+    }
+
+    [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
+    [data-testid="stSidebar"] label {
+        color: #edf0f6 !important;
+    }
+
+    [data-testid="stAlert"] {
+        background: #2b2d33;
+        color: #f4f6fb;
+        border-color: #464a55;
+    }
+
+    hr {
+        border-color: #3a3e48 !important;
+    }
+
+    /* TRUE HIGH-CONTRAST DARK MODE: dark surfaces + readable white text */
+    :root {
+        --ink: #ffffff;
+        --muted: #e0e0e0;
+        --line: #424242;
+        --canvas: #000000;
+    }
+    html, body, .stApp, [data-testid="stAppViewContainer"],
+    [data-testid="stMain"], [data-testid="stMainBlockContainer"] {
+        background: #000000 !important;
+        color: #ffffff !important;
+    }
+    [data-testid="stHeader"], [data-testid="stBottom"] {
+        background: #000000 !important;
+    }
+    [data-testid="stSidebar"], [data-testid="stSidebar"] > div:first-child {
+        background: #000000 !important;
+        border-right: 1px solid #333333 !important;
+    }
+    [data-testid="stSidebar"] * {
+        color: #ffffff !important;
+    }
+    .brand-title, .brand-caption, .side-label, .side-note,
+    .document-status, .document-status .status-title,
+    .document-status .status-detail, .topbar-title,
+    .topbar-subtitle, .mini-label, .welcome h1, .welcome p,
+    [data-testid="stMarkdownContainer"],
+    [data-testid="stMarkdownContainer"] p,
+    [data-testid="stMarkdownContainer"] li,
+    [data-testid="stMarkdownContainer"] strong,
+    [data-testid="stMarkdownContainer"] h1,
+    [data-testid="stMarkdownContainer"] h2,
+    [data-testid="stMarkdownContainer"] h3,
+    label, small, .stCaption, [data-testid="stCaptionContainer"] {
+        color: #ffffff !important;
+    }
+    .document-status, [data-testid="stFileUploader"],
+    [data-testid="stFileUploaderDropzone"],
+    [data-testid="stChatMessage"],
+    [data-testid="stChatInput"] > div,
+    [data-baseweb="select"] > div,
+    [data-baseweb="input"] > div,
+    [data-baseweb="textarea"] > div {
+        background: #171717 !important;
+        color: #ffffff !important;
+        border-color: #454545 !important;
+        box-shadow: none !important;
+    }
+    [data-testid="stFileUploaderDropzone"] {
+        background: #202020 !important;
+        border: 1px dashed #606060 !important;
+    }
+    [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"],
+    [data-testid="stChatMessage"] [data-testid="stMarkdownContainer"] * {
+        color: #ffffff !important;
+    }
+    div.stButton > button, [data-testid="stDownloadButton"] button {
+        background: #292929 !important;
+        color: #ffffff !important;
+        border: 1px solid #505050 !important;
+    }
+    div.stButton > button:hover, [data-testid="stDownloadButton"] button:hover {
+        background: #383838 !important;
+        border-color: #8b82ff !important;
+        color: #ffffff !important;
+    }
+    [data-testid="stChatInput"] textarea,
+    [data-baseweb="input"] input,
+    [data-baseweb="textarea"] textarea {
+        background: #171717 !important;
+        color: #ffffff !important;
+        caret-color: #ffffff !important;
+    }
+    [data-testid="stChatInput"] textarea::placeholder,
+    [data-baseweb="input"] input::placeholder,
+    [data-baseweb="textarea"] textarea::placeholder {
+        color: #bdbdbd !important;
+        opacity: 1 !important;
+    }
+    .assistant-pill {
+        background: #292929 !important;
+        border-color: #505050 !important;
+        color: #ffffff !important;
+    }
+    [data-testid="stAlert"] {
+        background: #202020 !important;
+        color: #ffffff !important;
+        border-color: #505050 !important;
+    }
+    hr { border-color: #424242 !important; }
 
     @media (max-width: 700px) {
         .block-container {
@@ -677,4 +823,3 @@ if question:
         except Exception as e:
             st.error("I couldn't complete that request. Check your model API settings and try again.")
             st.caption(str(e))
-
